@@ -262,20 +262,22 @@ body {
 
 /* navbar start */
 /* Bootstrap Navbar */
+/* Navbar */
 .navbar {
-  padding: 20px 80px;
+  padding: 20px;
   background: #e3e6f3;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 999;
-  position: sticky;
-  top: 0;
-  left: 0;
 }
 
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
   color: #1a1a1a;
+}
+
+.navbar-toggler {
+  border: none;
 }
 
 .navbar-nav {
@@ -290,7 +292,8 @@ body {
   font-size: 16px;
   font-weight: 600;
   color: #1a1a1a;
-  transition: 0.3s ease;
+  position: relative; /* Added */
+  transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover,
@@ -298,27 +301,53 @@ body {
   color: #088178;
 }
 
-/* Navbar toggler icon */
-.navbar-toggler {
-  border: none;
-  font-size: 1.25rem;
+.navbar-nav .nav-link::after { /* Modified */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #009970;
+  transition: width 0.3s;
 }
 
-.navbar-toggler:focus, .btn-close:focus {
-  box-shadow: none;
-  outline: none;
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* Cart icon */
+.navbar-nav .nav-link i {
+  font-size: 1.5rem;
+  color: #1a1a1a;
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 20px;
+@media (max-width: 991px) {
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-10%);
+    width: 0;
+    height: 2px;
+    background-color: #990000;
+    transition: width 0.3s;
+  }
+
+  .nav-link:hover::after, 
+  .nav-link.active::after {
+    width: 100%;
   }
 }
 
-.navbar-nav.right-side {
+
+/* .navbar-nav.right-side {
   margin-left: auto;
-}
+} */
 
 
 
@@ -855,4 +884,45 @@ footer .copyright {
   .contact-form {
       grid-template-columns: 1fr;
   }
+}
+
+
+/* shop */
+.page-header {
+  background-image: url("img/banner/b1.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+/* color for page-header */
+.page-header h2,
+.page-header p {
+  color: #fff;
+
+}
+
+/* pagination */
+#pagination  {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
 }
