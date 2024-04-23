@@ -298,24 +298,15 @@ body {
   color: #088178;
 }
 
-.navbar li a.active::after,
-.navbar li a:hover::after {
-  content: "";
-  width: 30%;
-  height: 2px;
-  background: var(--text-color);
-  position: absolute;
-  bottom: -4px;
-  left: 20%;
-}
-
 /* Navbar toggler icon */
 .navbar-toggler {
   border: none;
+  font-size: 1.25rem;
 }
 
-.navbar-toggler-icon {
-  background-color: #088178;
+.navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none;
 }
 
 /* Responsive Styles */
