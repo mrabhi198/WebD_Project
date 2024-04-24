@@ -354,6 +354,17 @@ body {
   font-size: 15px;
 }
 
+/* slider start */
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.3);
+}
+/* slider end */
 
 /* festure product */
 .product1 {
