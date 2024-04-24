@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,24 +9,23 @@
 
 /* variables */
 :root {
-  --main-color: #;
-  --text-color: #088178;
+  --main-color: #088178;
+  --text-color: #1a1a1a;
   --bg-color: #e3e6f3;
   --container-color: #1a1a1a;
 }
 
 /* logo */
 .logo {
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: bold;
-  color: #1a1a1a; 
+  color: var(--container-color);
   text-decoration: none;
 }
 
-
 /* login */
 
-    /* login container */
+/* login container */
 .login-container {
   max-width: 400px;
   margin: 0 auto;
@@ -33,90 +33,11 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center align the text */
-}
-
-    /* login form */
-.login-form {
   text-align: center;
 }
 
-    /* form group */
-.form-group {
-  margin-bottom: 20px;
-}
-
-    /* label */
-.form-group label {
-  display: block;
-  font-size: 18px;
-  color: #333;
-  text-align: left; /* Align labels to the left */
-}
-
-    /* input field */
-.form-group input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-    /* login button */
-.login-form button {
-  width: 100%;
-  padding: 12px;
-  font-size: 18px;
-  color: #fff;
-  background-color: #088178;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-    /* login button hover */
-.login-form button:hover {
-  background-color: #065a4f;
-}
-
-    /* responsive styles */
-@media (max-width: 768px) {
-  .login-container {
-      width: 90%;
-  }
-}
-
-/* forgot pwd  */
-.forgot-password {
-  font-size: 14px;
-  color: #088178;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px; 
-}
-
-.forgot-password:hover {
-  text-decoration: underline;
-}
-
-
-/* signup */
-
-/* signup container */
-.signup-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 40px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center align the text */
-}
-
-/* signup form */
-.signup-form {
+/* login form */
+.login-form {
   text-align: center;
 }
 
@@ -130,7 +51,7 @@
   display: block;
   font-size: 18px;
   color: #333;
-  text-align: left; /* Align labels to the left */
+  text-align: left;
 }
 
 /* input field */
@@ -142,13 +63,69 @@
   border-radius: 5px;
 }
 
+/* login button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* login button hover */
+.login-form button:hover {
+  background-color: #065a4f;
+}
+
+/* responsive styles */
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+  }
+}
+
+/* forgot pwd  */
+.forgot-password {
+  font-size: 14px;
+  color: var(--main-color);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* signup */
+
+/* signup container */
+.signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* signup form */
+.signup-form {
+  text-align: center;
+}
+
 /* Signup Button */
 .signup-form button {
   width: 100%;
   padding: 12px;
   font-size: 18px;
   color: #fff;
-  background-color: #088178;
+  background-color: var(--main-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -163,7 +140,7 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .signup-container {
-      width: 90%;
+    width: 90%;
   }
 }
 
@@ -175,7 +152,7 @@ p {
 }
 
 p a {
-  color: #088178;
+  color: var(--main-color);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -184,7 +161,6 @@ p a {
 p a:hover {
   color: #065a4f;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -265,7 +241,7 @@ body {
 /* Navbar */
 .navbar {
   padding: 20px;
-  background: #e3e6f3;
+  background: var(--bg-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
@@ -273,7 +249,7 @@ body {
 .navbar-brand {
   font-size: 24px;
   font-weight: bold;
-  color: #1a1a1a;
+  color: var(--container-color);
 }
 
 .navbar-toggler {
@@ -291,17 +267,17 @@ body {
 .navbar-nav .nav-link {
   font-size: 16px;
   font-weight: 600;
-  color: #1a1a1a;
-  position: relative; /* Added */
+  color: var(--container-color);
+  position: relative;
   transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #088178;
+  color: var(--main-color);
 }
 
-.navbar-nav .nav-link::after { /* Modified */
+.navbar-nav .nav-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -321,7 +297,7 @@ body {
 /* Cart icon */
 .navbar-nav .nav-link i {
   font-size: 1.5rem;
-  color: #1a1a1a;
+  color: var(--container-color);
 }
 
 /* Responsive Styles */
@@ -338,18 +314,11 @@ body {
     transition: width 0.3s;
   }
 
-  .nav-link:hover::after, 
+  .nav-link:hover::after,
   .nav-link.active::after {
     width: 100%;
   }
 }
-
-
-/* .navbar-nav.right-side {
-  margin-left: auto;
-} */
-
-
 
 /* home page */
 .hero {
@@ -387,13 +356,12 @@ body {
 
 /* feature */
 
-    /* to align in one row */
+/* to align in one row */
 .feature {
-   display: flex;
-   align-items: center;
-   /* to make it responsive */
-   flex-wrap: wrap;
-   justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .feature .fe-box {
@@ -406,7 +374,7 @@ body {
   margin: 15px 0;
 }
 
-    /* making features responsive */
+/* making features responsive */
 .feature .fe-box img {
   width: 100%;
   margin-bottom: 10px;
@@ -450,13 +418,13 @@ body {
   text-align: center;
 }
 
-    /* to align in one row */
-    .product1 .pro-container {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 20px;
-      flex-wrap: wrap;
-    }
+/* to align in one row */
+.product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
 
 .product1 .pro {
   width: 23%;
@@ -529,29 +497,31 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image:url("img/banner/b2.jpg ");
+  background-image: url("img/banner/b2.jpg");
   width: 100%;
   height: 40vh;
   background-size: cover;
-  background-position: center;  
+  background-position: center;
 }
-.banner h4{
+
+.banner h4 {
   color: #fff;
   font-size: 16px;
 }
-.banner h2{
-   color: #fff;
-   font-size: 30px;
-   padding: 10px 0;
 
+.banner h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
 }
-.banner h2 span{
+
+.banner h2 span {
   color: #ef3636;
-
 }
-.banner button:hover{
-  background:#088178;
-  color:#fff;
+
+.banner button:hover {
+  background: #088178;
+  color: #fff;
 }
 
 /* action */
@@ -567,23 +537,23 @@ body {
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  background-image:url("img/banner/b17.jpg ");
+  background-image: url("img/banner/b17.jpg");
   min-width: 580px;
   height: 50vh;
   background-size: cover;
-  background-position: center;  
+  background-position: center;
   padding: 30px;
 }
 
 /* banner-box2 */
 .sm-banner .banner-box2 {
-  background-image:url("img/banner/b10.jpg ");
+  background-image: url("img/banner/b10.jpg");
 }
 
 .sm-banner h4 {
-   color: #fff;
-   font-size: 20px;
-   font-weight: 300;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .sm-banner h2 {
@@ -618,24 +588,24 @@ body {
   justify-content: center;
   align-items: flex-start;
   text-align: center;
-  background-image:url("img/banner/b7.jpg ");
+  background-image: url("img/banner/b7.jpg");
   min-width: 30%;
   height: 30vh;
   background-size: cover;
-  background-position: center;  
+  background-position: center;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-    /* banner2 */
-  .banner3 .banner-box2 {
-    background-image:url("img/banner/b4.jpg ");
-  }
+/* banner2 */
+.banner3 .banner-box2 {
+  background-image: url("img/banner/b4.jpg");
+}
 
-    /* banner3 */
-  .banner3 .banner-box3 {
-    background-image:url("img/banner/b18.jpg ");
-  }
+/* banner3 */
+.banner3 .banner-box3 {
+  background-image: url("img/banner/b18.jpg");
+}
 
 .banner3 h2 {
   color: #fff;
@@ -670,7 +640,7 @@ body {
 .newsletter p {
   font-size: 14px;
   font-weight: 600;
-  color: #818ea0
+  color: #818ea0;
 }
 
 .newsletter p span {
@@ -682,7 +652,7 @@ body {
   width: 40%;
 }
 
-.newsletter input{
+.newsletter input {
   height: 3.125rem;
   padding: 0 1.25rem;
   font-size: 14px;
@@ -741,7 +711,7 @@ footer .follow {
   margin-top: 20px;
 }
 
-footer .follow i{
+footer .follow i {
   color: #465b52;
   padding-right: 4px;
   cursor: pointer;
@@ -765,7 +735,6 @@ footer .copyright {
   width: 100%;
   text-align: center;
 }
-
 
 /* About Section */
 .about {
@@ -793,11 +762,11 @@ footer .copyright {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .about h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .about p {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
@@ -871,58 +840,15 @@ footer .copyright {
   background-color: #065a4f;
 }
 
+/* Map */
+.map {
+  height: 400px;
+  margin-top: 20px;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .contact h2 {
-      font-size: 28px;
-  }
-
-  .contact p {
-      font-size: 16px;
-  }
-
   .contact-form {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
-}
-
-
-/* shop */
-.page-header {
-  background-image: url("img/banner/b1.jpg");
-  width: 100%;
-  height: 40vh;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  padding: 14px;
-}
-
-/* color for page-header */
-.page-header h2,
-.page-header p {
-  color: #fff;
-
-}
-
-/* pagination */
-#pagination  {
-  text-align: center;
-}
-
-#pagination a {
-  text-decoration: none;
-  background-color: #088178;
-  padding: 15px 20px;
-  border-radius: 4px;
-  color: #fff;
-  font-weight: 600;
-  margin: 0 5px;
-}
-
-#pagination a i {
-  font-size: 16px;
-  font-weight: 600;
 }
