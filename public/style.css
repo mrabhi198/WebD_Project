@@ -336,16 +336,18 @@ body {
 
 .hero h4 {
   padding-bottom: 15px;
+  font-weight: 800;
 }
 
 .hero h1 {
-  color: var(--text-color);
+  color: var(--main-color);
+  font-weight: 600;
 }
 
 .hero button {
   background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDuYXkO-fSUTJkgwGuIFAUvTa_z4SuyBOCpSsBfxYXtrE3HXvAEfDqbfYgHyS1pHAQPFuDE_ArMjwIATtJIv3_xrjfYmijnf2T34EsFE6TKITJowa3GuoCbObh8tnlVPD6OMiDG7q_g8Bg7MEgn8MABbUrrFU3UFUP7QcfB-A78m5QJc3ILinENRiWQaGx/s227/button.png");
   background-color: transparent;
-  color: var(--text-color);
+  color: var(--main-color);
   border: 0;
   padding: 14px 80px 14px 65px;
   background-repeat: no-repeat;
@@ -362,7 +364,31 @@ body {
 .c-img {
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.3);
+  /* filter: brightness(0.3); */
+} 
+
+.carousel-caption p,
+.carousel-caption h1,
+.carousel-caption button {
+  color: #fff; 
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  background-color: #fff; 
+}
+.carousel-indicators {
+  bottom: 10px; 
+}
+
+.carousel-indicators button {
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
 }
 /* slider end */
 
