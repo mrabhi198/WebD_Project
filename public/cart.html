@@ -47,7 +47,7 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="cart.html"><i class="far fa-shopping-bag"></i></a>
+                        <a class="nav-link active" href="cart.html"><i class="far fa-shopping-bag" id="cart-icon" data-quantity="0"></i></a>
                     </li>
                 </ul>
             </div>
@@ -56,13 +56,13 @@
     <!-- navbar end -->
 
     <!-- page header -->
-    <section class="page-header contact-header">
+    <section class="page-header cart-header">
         <h2>#let's_talk</h2>
         <p>LEAVE A MESSAGE, We love to hear from you!</p>
     </section>
 
     <!-- cart -->
-    <section id="cart" class="section-p1" >
+    <section class="cart section-p1" >
         <table width="100%">
             <thead>
                 <tr>
@@ -75,13 +75,14 @@
                 </tr>
             </thead>
 
+            <!-- content -->
             <tbody>
                 <tr>
-                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><a href="#"><i class="far fa-times-circle cart-remove"></i></a></td>
                     <td><img src="img/products/n12.webp" alt=""></td>
                     <td>Alpha Black</td>
                     <td>₹1367</td>
-                    <td><input type="number" value="1"></td>
+                    <td><input type="number" name="" id="" value="1" class="cart-quantity"></td>
                     <td>₹1367</td>
                 </tr>
             </tbody>

@@ -25,18 +25,12 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">SwiftStylez</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- sidebar header -->
-                    <!-- <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div> -->
-
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -59,7 +53,7 @@
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="cart.html"><i class="far fa-shopping-bag"></i></a>
+                            <a class="nav-link" href="cart.html"><i class="far fa-shopping-bag" id="cart-icon" data-quantity="0"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -84,7 +78,7 @@
                     <img src="img/products/p2.webp" alt="">
                     <div class="des">
                         <span>campus</span>
-                        <h5>MIKE N Black Men's Running Shoes</h5>
+                        <h5 class="product-title">MIKE N Black Men's Running Shoes</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -92,9 +86,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹1084</h4>
+                        <h4 class="price">₹1084</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product2 -->
@@ -102,7 +96,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWQ0AAnYU9CIBPa-8iNu7lg-8cSUmOjqLHluFebdoaTOAIBFDqv5xwuI9zWREmhenUAqGKYoG_i_Z8c5BerS7FlcrQJHLNhPaLHiVbXKU4CSMFx8yUt5X9hEtC3EiqcgDdRyvUs5brw7sQ_VBUTS9Z5EK5NJlv8NrjgdLWzeRHrVTp0iC7CBi2ZFvnPU_-/s320/f10.jpg" alt="">
                     <div class="des">
                         <span>bata</span>
-                        <h5>Formal Shoes Brown</h5>
+                        <h5 class="product-title">Formal Shoes Brown</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -110,9 +104,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹2399</h4>
+                        <h4 class="price">₹2399</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product3 -->
@@ -120,7 +114,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3dufOmmW0uR1qqExjCjEL_gIEU_O3xSTpQ6smMgWxgBFImZkoBkJd0JnSEW89Bk0Z9HX503_GBQZ0U5svr0xDFMKcAk9P1K2Us0f5_oqCK1N1o0oSiKrfJ_eDq0qmeU-H3HYxDIBCGogoJrVQlpu3JOhcxiLElfby39BW7Wm1xx4QZHCdfiYmESoVGsAJ/s320/f14.jpg" alt="">
                     <div class="des">
                         <span>red chief</span>
-                        <h5>Formal Shoes Brown</h5>
+                        <h5 class="product-title">Formal Shoes Brown</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -128,9 +122,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹2999</h4>
+                        <h4 class="price">₹2999</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product4 -->
@@ -138,7 +132,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheX39tuSVe3BFlvXawsNb_ZYenjc4eVAG0RfHpzYrvMUcdiaWxAMHEl9xUpX9bC5wDmCT9SRHtYmcy3gar61tZHEaRWWsJi-UfpdK_82ed1JY2xW58vfxwff31OSivCUYKCeUDYuY7-uoW7wYu276DH6bXe4U_6qt7y4IyqV0z5poeESB-k99KWOb43d5V/s320/f11.jpg" alt="">
                     <div class="des">
                         <span>nike</span>
-                        <h5>Shoes</h5>
+                        <h5 class="product-title">Shoes</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -146,9 +140,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹999</h4>
+                        <h4 class="price">₹999</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product5 -->
@@ -156,7 +150,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQSeKKAxxxaF1fvZz6L76kYcqeeZn22RVwnrfF8ymM77W3leCU_eBSY0jO0bgXn6jPKHs4zcuzexf-hvH2SyQUvoKQeng_ofShP7FawV24Vha5IXuD8kAyaNedtxj9zk_x_3xvsIYEadDuvT5JUJ7JZSx3RvMii6_jPAjjMC9_X5lKpT4B6GjaYH3nSmNS/s320/f13.jpg" alt="">
                     <div class="des">
                         <span>adidas</span>
-                        <h5>Shoes</h5>
+                        <h5 class="product-title">Shoes</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -164,9 +158,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹899</h4>
+                        <h4 class="price">₹899</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product6 -->
@@ -174,7 +168,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpjpU8vYK8bx7Q_Q48lpd2YjbAuN_Lugz6kyJ5-OXj6gCAgDk9MID-khP_Ct8qya9CT4dOenTM1fVwcp2l6Cigo_rdXacxfsjI7_CLlW2hiGm8TpxWsITiXxGAlTrTkfR8dh8r0Cg57fUeYImsPGxdY6k-Yz9RPRbnfco5MKDcRrmsK7HGkE0ckRvElPsW/s320/f12.jpg" alt="">
                     <div class="des">
                         <span>nike</span>
-                        <h5>Shoes</h5>
+                        <h5 class="product-title">Shoes</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -182,9 +176,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹499</h4>
+                        <h4 class="price">₹499</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product7 -->
@@ -192,7 +186,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEtMso8iXCB8YZeFhOLJP4B9blspcUxhj-w6-Hj3zH5DwaenxocckqOI4-PkKIqeV1NYXP18xjL5ia-xa-5gbrdzAXM0PXk9vK7okIgEhJF4amVAWJZIkTNu_lLfHgVKd4GRaZ0c4A25ORnjrk8STm05nhqrdztPxsa4KBvMPUNFHooHmJ1EowuIs0f0jD/s320/f15.jpg" alt="">
                     <div class="des">
                         <span>nike</span>
-                        <h5>Shoes</h5>
+                        <h5 class="product-title">Shoes</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -200,9 +194,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹1199</h4>
+                        <h4 class="price">₹1199</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product8 -->
@@ -210,7 +204,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4ZFHXZPbcr7Eku35lcBjP2U1Pj9IlmRukFK7pp-Lh1pwxOMvDWroVjRv00cHPW5KqW6P5t_sgWsps4fA1hJHTONm6gnaZhyphenhyphenUzEiz7AXPn4kKMKfFCEFDSjf-V_pEe4OSQn3eSb8I-uW8ivKpdng5367ckRuGdb-scRqntIK_ctLoa4APLyPr2HL1112YC/s320/f16.jpg" alt="">
                     <div class="des">
                         <span>nike</span>
-                        <h5>Shoes</h5>
+                        <h5 class="product-title">Shoes</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -218,9 +212,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹1399</h4>
+                        <h4 class="price">₹1399</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
             <!--remove the closing div and header so that both so that featured product and new arrival will bw in single div --> 
                 <!-- product1 -->
@@ -228,7 +222,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXs5oC0wzYngGjTIUnc6yWwgujSNrChT4IYfZ76A2XhprDNb7fGy0rJfydUdJ514d6EVNGTQu_4SnxDl2iHoyNQNd4E1L7UB5juAXLLjoWYDC0no8W3iV7I5mhUZZYWUrjya__P79M8FBeM1ztmc1s_wWx9-2HE9wJ4agV2xxLZRvqNJ1_CdnUCr4klX1o/s320/n9.webp" alt="">
                     <div class="des">
                         <span>WOODLAND</span>
-                        <h5>Outdoor Shoe For Men  (Brown)</h5>
+                        <h5 class="product-title">Outdoor Shoe For Men  (Brown)</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -236,9 +230,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹399</h4>
+                        <h4 class="price">₹399</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product2 -->
@@ -246,7 +240,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxIzM0AkRA9gWjdKroLjsJvlPUoSwMta3JHIa1yeZFQIMzsfhkYbjbsIZeWavQ7vZbLP0c_yVpcWsMQIX6akRb3a2dolp3JR8sFP0iiwVR_zOdo1SpzcaLuKDSP151-OXqT-pXr8pooq1IpA4Y82uE01MsjhoWbhB_zzhMdLGwnDRF4LUdVuPL4x4PXTgg/s320/n10.webp" alt="">
                     <div class="des">
                         <span>CAMPUS </span>
-                        <h5> Shoes For Men </h5>
+                        <h5 class="product-title"> Shoes For Men </h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -254,9 +248,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹399</h4>
+                        <h4 class="price">₹399</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product3 -->
@@ -264,7 +258,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuCUNXYdt1WnRpjax_b5iIokkW8me4I-BOi-ddhb8p5Hy51RXb1zUTZuhvDXoI5ivT3mi-Ja5HTX3if_NphUIwFhbvPyU4PhbZga0M7-GEx47gVoJg36dsdMwUgxW2x6_IbizGQMQWWh6RWAEIhwkXbuqPqeN7vEUFt9nG5lvK-nU6blfSwxshrSlqt9-A/s320/n11.webp" alt="">
                     <div class="des">
                         <span>Bata</span>
-                        <h5>Slip On For Men  (Black)</h5>
+                        <h5 class="product-title">Slip On For Men  (Black)</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -272,9 +266,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹399</h4>
+                        <h4 class="price">₹399</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product4 -->
@@ -282,7 +276,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkRB-l1m2X68plrmbDc6bSE-HmFOuEiQnJ_Efq9sRH9-fbjXHUHGLniu1fGd9eH-jCoEl5P5Gursl5pMD2F2ur2G98MGRIcelViSsFnZcbDeXrrNbja3MlcaVvt2pqU8NIQ7NWVVu0AwBtdzGbRZjHLNo0RR3fNxjB8Yz6arS7z5ySFImplrBrgGwcaP59/s320/n12.webp" alt="">
                     <div class="des">
                         <span>atom</span>
-                        <h5>Alpha Black</h5>
+                        <h5 class="product-title">Alpha Black</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -290,9 +284,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹1367</h4>
+                        <h4 class="price">₹1367</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product5 -->
@@ -300,7 +294,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizY_zU5VHFn0RMbd8ugGs4GvL-bcFtPB-PdG26XUE0AAhLFzlxtFbH2naJA-q9rNf1Qii9MvFCEgMwORqfHm5AVL3WDIgc5uWockE4Dhe-digF-xcjvyJaTDK2WIeU0mgkP3_Xy2eq0ySVVlo5Klz1V-O0RJE-nu1QBV7XUIkZte87429sJoj4gKsdhLc2/s320/n13.webp" alt="">
                     <div class="des">
                         <span>atom</span>
-                        <h5>Alpha White</h5>
+                        <h5 class="product-title">Alpha White</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -308,9 +302,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹1367</h4>
+                        <h4 class="price">₹1367</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product6 -->
@@ -318,7 +312,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdNdTKmeURinsezN8DI45eTajCqfUqv762_uXonTF-2_BpuXs9YKGAfWfeaa1zj-RimN2L_Kwka1yqFliwK37YrpCb12W2jIgqpHOD-xo2DlUlBqj6NVvJymY9QZ2tRy8QRfi6a57Ml5JDoHN98_NBBqPrgKR8aAL7faADF9ZTgRnlAs0ptofPWYOCr8KE/s320/n14.webp" alt="">
                     <div class="des">
                         <span>woodland</span>
-                        <h5>Outdoor for men</h5>
+                        <h5 class="product-title">Outdoor for men</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -326,9 +320,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹2019</h4>
+                        <h4 class="price">₹2019</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product7 -->
@@ -336,7 +330,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho99te0uUkDuHJg8m-WlrRYVMNFUcfvK9aaQ44VWt0egCgfVORIOg3wBjz6jn54PYXNM0C_BZEYgFhRnz3dR69QXzssK6RQeBnhdv3mUif5NGp8ERI1N1h_bzHGJcmvudd8qm1-vSaGqeS0a6gANV6duEtXhSroMx9mvlQNhClE4zvw85D6N5v7RyuRodF/s320/n15.webp" alt="">
                     <div class="des">
                         <span>layasa</span>
-                        <h5>Stylish Casual Sports Shoe Sneakers For Women</h5>
+                        <h5 class="product-title">Stylish Casual Sports Shoe Sneakers For Women</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -344,9 +338,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹459</h4>
+                        <h4 class="price">₹459</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
 
                 <!-- product8 -->
@@ -354,7 +348,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyabXKy6OW654yuchv41iCBDt76vD_pTsi96fF3VbZYzyee_kizXMp31BSFh3oTrejYI1rNxL4gtg-gGGl8vZNEbFHrD8H27XOwsT9GSbDKIhZ_w3WUxgMFTpuPTQ7rIkdWwZkeJ4toYLeuuIqRdxrfyS1UgH3CdBekkDIc5NRTrtfbkTR48_Ou9VDiETC/s320/n16.webp" alt="">
                     <div class="des">
                         <span>reebok</span>
-                        <h5>Rush Runner Running Shoes</h5>
+                        <h5 class="product-title">Rush Runner Running Shoes</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -362,9 +356,9 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <h4>₹799</h4>
+                        <h4 class="price">₹799</h4>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                    <i class='fas fa-shopping-cart cart-p add-cart'></i>
                 </div>
             </div>
         </section>
