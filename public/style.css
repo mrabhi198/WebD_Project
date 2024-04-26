@@ -319,6 +319,11 @@ body {
   align-items: center;
 }
 
+.cart-remove {
+  color: rgb(229, 7, 7);
+  cursor: pointer;
+}
+
 /* Responsive Styles */
 @media (max-width: 991px) {
   .nav-link::after {
@@ -342,6 +347,7 @@ body {
 /* home page start (hero section) */
 .hero {
   background-image: url("img/hero3.jpg");
+  margin-top: 50px;
   height: 90vh;
   width: 100%;
   background-size: cover;

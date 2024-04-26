@@ -19,7 +19,6 @@ loginForm.addEventListener("submit", async function (event) {
       });
   
       const data = await response.json();
-      // Display the message in an alert
       console.log(data);
       alert(data.message);
       if (data.message === "Login successful!") location.href = "index.html";
@@ -33,7 +32,5 @@ function onGoogleLogin(googleUser) {
   var profile = googleUser.getBasicProfile();
   var username = profile.getName();
   var email = profile.getEmail();
-  // Send username and email to your server for authentication
-  // Example: You can use AJAX to send data to your server
   console.log(username, email);
 }
