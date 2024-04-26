@@ -106,7 +106,7 @@
             <input type="text" placeholder="Your Name">
             <input type="email" placeholder="E-mail">
             <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button class="normal">Submit</button>
+            <button class="normal msgBtn">Submit</button>
         </form>
     </section>
 
@@ -165,6 +165,20 @@
         </div>
 
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function showMessage() {
+                alert("Your message is sent. Thank you!");
+            }
+        
+            document.querySelector(".msgBtn").addEventListener("click", function(event) {
+                // event.preventDefault();
+                showMessage();
+            });
+        });
+        </script>
+        
 
     <script src="js/script.js"></script>
 
